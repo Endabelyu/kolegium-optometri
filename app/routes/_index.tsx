@@ -2,16 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
-import BoxImage from "src/components/BoxImage";
-import { Button } from "src/components/ui/button";
 import { Link } from "@remix-run/react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "~/src/components/ui/card";
-import { Badge } from "~/src/components/ui/badge";
+
+import { Button } from "@/components/ui/button";
+import BoxImage from "@/components/BoxImage";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -103,7 +99,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Carousel - Container Width */}
-      <section className="py-12 sm:py-16 ">
+      <section className="py-12  bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative h-[50vh] overflow-hidden rounded-lg">
             {heroSlides.map((slide, index) => (

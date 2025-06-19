@@ -9,8 +9,8 @@ const BaseLayout = () => {
   return (
     <div>
       {/* <CookiesProvider defaultSetOptions={{ path: "/" }}> */}
-      <Navbar />
-      <div className=" min-h-screen  bg-[#f4f4f4]">
+      <div className=" min-h-screen  bg-[#f4f4f4]  ">
+        <Navbar />
         <Outlet />
       </div>
       {/* </CookiesProvider> */}

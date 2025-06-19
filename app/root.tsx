@@ -10,7 +10,7 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import "./globals.css";
-import BaseLayout from "../src/components/BaseLayout";
+import BaseLayout from "./components/BaseLayout";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -34,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="relative">
         {children}
         <ScrollRestoration />
         <Scripts />
